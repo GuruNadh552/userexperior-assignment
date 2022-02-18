@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountryListComponent implements OnInit {
 
+  loader:boolean=true;
   countries:any = [];
 
   constructor(private mainServie:MainserviceService) { }
@@ -20,6 +21,8 @@ export class CountryListComponent implements OnInit {
     this.mainServie.getAllCountries().subscribe((res)=>{
       console.log(res);
       this.countries = res;
+    },(err)=>{},()=>{
+      this.loader = false;
     })
   }
 
