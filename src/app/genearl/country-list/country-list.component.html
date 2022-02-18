@@ -1,0 +1,5 @@
+<div class="country-select">
+  <select class="form-select" aria-label="Default select example" (change)="getDetails($event)">
+    <option selected value="0">Select the Country</option>
+    <option  *ngFor="let i of countries;" value="{{i.cca3}}">{{i.name.common}}</option>
+  </select>

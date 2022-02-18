@@ -1,0 +1,18 @@
+<div class="title p-2 mx-3 h6">Home - Country Details</div>
+<div class="main-table p-1">
+  <div class="card p-1">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th colspan="2" class="text-center">DATA</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let i of fieldsData;let j=index;">
+            <th scope="row">{{ i }}</th>
+            <td>{{ fieldValues[j] }}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

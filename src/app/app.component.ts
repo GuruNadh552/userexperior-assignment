@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'userexperior';
+  data:any = [
+    {
+      name:'Home',
+      icon:'home',
+      link:''
+    },
+    {
+      name:'Language List',
+      icon:'bookmark',
+      link:'language-list'
+    },
+    {
+      name:'Currency List',
+      icon:'book',
+      link:'currency-list'
+    }
+  ]
 }
